@@ -1,3 +1,6 @@
+from __future__ import absolute_import
+from builtins import range
+from builtins import object
 
 from multiprocessing import Process
 import subprocess
@@ -6,13 +9,13 @@ import signal
 import locale
 import errno
 import codecs
-from logger import log
+from .logger import log
 
 class ClosingException(Exception):
     pass
 
 
-class DownloadStatus:
+class DownloadStatus(object):
     DONE = 1
     ERROR = 2
     IN_PROGRESS = 3

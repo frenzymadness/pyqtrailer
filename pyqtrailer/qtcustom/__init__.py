@@ -1,3 +1,5 @@
+from builtins import str
+from builtins import range
 import json
 import locale
 import re

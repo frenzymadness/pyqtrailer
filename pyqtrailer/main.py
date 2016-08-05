@@ -1,3 +1,8 @@
+from __future__ import absolute_import
+from future import standard_library
+standard_library.install_aliases()
+from builtins import str
+from builtins import range
 
 import sys
 import os
@@ -27,7 +32,7 @@ import pytrailer as amt
 from .qtcustom import *
 from .qtcustom import resources
 from .downloader import TrailerDownloader, DownloadStatus
-from logger import log
+from .logger import log
 
 term_closing = 0
 
